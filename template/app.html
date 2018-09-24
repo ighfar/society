@@ -1,0 +1,37 @@
+<style type="text/css">
+	.bg-custom{
+		background:#ff074c;
+	}
+</style>
+<nav class="navbar navbar-expand navbar-dark bg-info">
+  <a class="navbar-brand" href="#">App Society</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#!/app/form">form<span class="sr-only">(current)</span></a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!/app/list">list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!/app/reg">Register</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav my-2 mylg-0">
+               <li class="nav-item">
+                  <span class="nav-link">{{name}}</span>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="" ng-click="logout()">logout </a>
+              </li>
+            </ul>
+      </div>
+</nav>
+<br>
+<br>     
+<ui-view></ui-view> 	
+	

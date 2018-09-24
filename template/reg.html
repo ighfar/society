@@ -1,0 +1,43 @@
+<div uib-alert dismiss-on-timeout="5000" ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+<div class="row" style="margin-top: 150px ">
+  <div class="col-sm-4">
+    
+  </div>
+  <div class="col-sm-4">
+        <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><center>[ Register ]</center></h3>
+                    </div>
+                    <hr>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                 <div class="form-group">
+                                    <input class="form-control" placeholder="Nama " name="nama" type="form" ng-model="Nama">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Nomor HP" name="nohp" type="text" autofocus="" ng-model="nohp">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" ng-model ="password">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Nomor Rumah" name="norumah" type="text" ng-model="norumah">
+                                </div>
+                                   <div class="form-group">
+                                    <input class="form-control" placeholder="Nama Referensi atau tetangga" name="naref" type="text" autofocus="" ng-model="naref">
+                                </div>
+                                <div>
+                                <a href="javascript:;" class="btn btn-sm btn-info btn-block" style="margin-bottom: 15px" ng-click = "addAlert( )">Register</a>
+                                <a href="javascript:;" class="btn btn-sm btn-warning btn-block" ng-click = "cancel( )">cancel</a>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+      </div>
+  </div>
+  <div class="col-sm-3">
+  
+  </div>
+</div> 

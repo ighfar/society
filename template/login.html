@@ -1,0 +1,39 @@
+<div uib-alert dismiss-on-timeout="5000" ng-repeat="alert in alerts" ng-class="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+<div class="row" style="margin-top: 200px ">
+  <div class="col-sm-4">
+    
+  </div>
+  <div class="col-sm-4">
+        <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title"><center>Sign In</center></h1>
+                    </div>
+                    <hr>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" ng-model="email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="" ng-model ="password">
+                                </div>
+                                <div>
+                                    <a href="javascript:;" ng-click = "register( )">Register |</a>
+                                    <a href="javascript:;" ng-click = "forgot( )">lupa password</a>
+
+                                </div>
+                                <br>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="javascript:;" class="btn btn-lg btn-success btn-block" ng-click = "login( )">Login</a>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+      </div>
+  </div>
+  <div class="col-sm-3">
+  
+  </div>
+</div> 
